@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="logi.css">
+</head>
+<body>
+    <!-- Registration form -->
+    <div class="container">
+        <div class="form-box">
+            <form action="" name="Formfill" onsubmit="return validateForm()">
+                <h2>Registration</h2>
+                <div class="input-box">
+                    <input type="text" autocomplete="off" name="user" placeholder="Username" required>
+                </div>
+                <div class="input-box">
+                    <input type="email" autocomplete="off" name="Email" placeholder="Email" required>
+                </div>
+                <div class="input-box">
+                    <input type="password" autocomplete="off" name="Password" placeholder="Password" required>
+                </div>
+                <div class="input-box">
+                    <input type="text"  autocomplete="off" name="cpassword" placeholder="Confirm Password" required>
+                </div>
+                <button type="submit" class="btn">
+                    <span>Register</span>
+                    <div class="liquid"></div>
+                </button>
+                <div class="group">
+                    <span><a href="#">Forget-Password</a></span>
+                    <span><a href="#">Login</a></span>
+                </div>
+            </form>
+            <div id="alertBox" class="alert-box" style="display: none;">
+                <p>Passwords do not match</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+
+</body>
+</html>
